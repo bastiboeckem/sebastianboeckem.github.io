@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dart</title>
+    <link href="design.css" rel="stylesheet">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="dart.js"></script>
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="left">
+            <div class="step step_0">
+                <h1>Was wird gespielt?</h1>
+                <div id="goal" class="box radio_group">
+                    <div>
+                        <input id="easy" type="radio" name="goal" value="301" checked/>
+                        <label for="easy">301</label>
+                    </div>
+                    <div>
+                        <input id="medium" type="radio" name="goal" value="501"/>
+                        <label for="medium">501</label>
+                    </div>
+                </div>
+                <button class="typeSubmit" next="1">Weiter</button>
+            </div>
+
+            <div class="step step_1 newPlayer">
+                <h1>Spieler hinzufügen</h1>
+                <div class="box">
+                    <form id="addPlayer">
+                        <input class="typeText" type="text" placeholder="Spielername" id="newPlayer"/>
+                        <input type="submit" class="addPlayer button typeSubmit" value="Add Player"/>
+                    </form>
+                </div>
+                <button class="typeSubmit" next="2" disabled>Weiter</button>
+            </div>
+
+            <div class="step step_2 game">
+            <h1>Rechner</h1>
+            <div class="box">
+                <div id="player_default">
+                    <div class="player">
+                        <div class="box">
+                            <h2 class="player_name">Spieler</h2>
+                            <span class="points_remaining">301</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <form id="darts">
+                    <div id="factors" class="radio_group">
+                        <div>
+                            <input id="single" type="radio" name="factor" value="1" checked/>
+                            <label for="single">Single</label>
+                        </div>
+                        <div>
+                            <input id="double" type="radio" name="factor" value="2"/>
+                            <label for="double">Double</label>
+                        </div>
+                        <div>
+                            <input id="triple" type="radio" name="factor" value="3"/>
+                            <label for="triple">Triple</label>
+                        </div>
+                    </div>
+                    <div id="score">
+                        <input class="typeSubmit" type="submit" value="1"/>
+                        <input class="typeSubmit" type="submit" value="2"/>
+                        <input class="typeSubmit" type="submit" value="3"/>
+                        <input class="typeSubmit" type="submit" value="4"/>
+                        <input class="typeSubmit" type="submit" value="5"/>
+                        <input class="typeSubmit" type="submit" value="6"/>
+                        <input class="typeSubmit" type="submit" value="7"/>
+                        <input class="typeSubmit" type="submit" value="8"/>
+                        <input class="typeSubmit" type="submit" value="9"/>
+                        <input class="typeSubmit" type="submit" value="10"/>
+                        <input class="typeSubmit" type="submit" value="11"/>
+                        <input class="typeSubmit" type="submit" value="12"/>
+                        <input class="typeSubmit" type="submit" value="13"/>
+                        <input class="typeSubmit" type="submit" value="14"/>
+                        <input class="typeSubmit" type="submit" value="15"/>
+                        <input class="typeSubmit" type="submit" value="16"/>
+                        <input class="typeSubmit" type="submit" value="17"/>
+                        <input class="typeSubmit" type="submit" value="18"/>
+                        <input class="typeSubmit" type="submit" value="19"/>
+                        <input class="typeSubmit" type="submit" value="20"/>
+                        <input class="typeSubmit" type="submit" value="25"/>
+                        <input class="typeSubmit" type="submit" value="50"/>
+                    </div>
+                </form>
+            </div>
+            <button class="" next="2">Nächster Spieler</button>
+        </div>
+        </div>
+        <div class="right">
+            <h1>Spieler</h1>
+            <div class="players_list box">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>
